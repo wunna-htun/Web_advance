@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query</title>
+</head>
+<style>
+    .box{
+        position: relative;
+        background-color: blueviolet;
+        width: 800px;
+        height: 150px;
+        border: 5px solid dodgerblue;
+
+    }
+
+    .ball{
+        position: absolute;
+        background-color: red;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        top: 40px;
+
+
+    }
+
+</style>
+
+
+<body>
+
+    <div class="box">
+        <div class="ball">
+
+        </div>
+    </div>
+    <script>
+        let ball =document.querySelector(".ball")
+        ball.style.left="100px"
+    </script>
+</body>
+</html>

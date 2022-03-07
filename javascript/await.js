@@ -8,6 +8,14 @@ function add100() {
 
 }
 
-async function add100lator(params) {
+async function add100later() {
+
+    let result = await add100()
+    console.log(result);
 
 }
+
+
+console.log("some process");
+add100later();
+console.log("more process");
