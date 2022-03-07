@@ -27,6 +27,42 @@
 
     }
 
+    .start{
+
+        width: 8rem ;
+        height: 2rem;
+        background-color: greenyellow;
+        color: darkblue;
+        border-radius: 15px;
+
+        margin: 0.5rem;
+
+    }
+
+    .stop{
+        width: 8rem ;
+        height: 2rem;
+
+        background-color: darkred;
+        color: white;
+        border-radius: 15px;
+
+        margin: 0.5rem;
+
+
+        
+
+
+    }
+
+    .container{
+        width: 800px;
+        border: 5px solid salmon;
+        text-align: center;
+    }
+
+
+
 </style>
 
 
@@ -37,9 +73,82 @@
 
         </div>
     </div>
+
+    <div class="container">
+        <button class="start" onclick="start()"> Start</button>
+
+        <button class="stop" onclick="stop()"> Stop</button>
+    </div>
+
+    
+
+
+
+
+
+
+
+
     <script>
         let ball =document.querySelector(".ball")
-        ball.style.left="100px"
+        let left =0;
+        let direction ="right"
+
+        let inverval=setInterval(move(),10);
+        // ball.style.left="100px"
+
+        // go to left 
+        // setInterval(() => {
+        //     left+=1;
+        //     if(left>740) left=0
+        //     ball.style.left=`${left}px`
+            
+        // }, 10);
+
+
+        // setInterval(() => {
+
+        //     if (direction==="right") {
+        //         left+=1;
+        //         if(left>740) direction="left"
+                
+        //     } else{
+        //         left-=1;
+        //         if(left<1) direction="right"
+        //     }
+
+        //     ball.style.left=`${left}px`
+
+            
+        // }, 10);
+
+
+        function move (){
+            if (direction==="right") {
+                left+=1;
+                if(left>740) direction="left"
+                
+            } else{
+                left-=1;
+                if(left<1) direction="right"
+            }
+
+            ball.style.left=`${left}px`
+        }
+
+        function start(){
+
+            inverval=setInterval(move,10)
+
+        }
+
+        function stop() {
+
+            clearInterval(inverval)
+            
+        }
+
+
     </script>
 </body>
 </html>
