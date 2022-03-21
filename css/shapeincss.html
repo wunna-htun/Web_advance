@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape in css</title>
+</head>
+<style>
+    body{
+        padding: 20px;
+    }
+    h2{
+        margin: 20px 0 20px 0;
+        padding: 2px 0 20px 0;
+
+    }
+    .sqaure{
+        width: 200px;
+        height: 200px;
+        background-color: yellowgreen;
+    }
+    .circle{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        border-radius: 50%;
+    }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid rgb(68, 66, 170) ;
+
+
+    }
+
+    .parallelogram{
+        margin-left: 1rem;
+        width: 300px;
+        height: 150px;
+        transform: skew(25deg);
+        background-color: coral;
+    }
+    .diamond{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        transform: rotate(45deg);
+    }
+
+</style>
+<body>
+
+    <h2>    Sqaure    </h2>
+    <div class="sqaure">
+    </div>
+
+
+    <h2>Circle</h2>
+    <div class="circle">
+
+    </div>
+
+
+    <h2>triangle</h2>
+    <div class="triangle">
+
+    </div>
+
+    <h2>parallelogram</h2>
+    <div class="parallelogram">
+
+    </div>
+
+    <h2>Diamond</h2>
+    <div class="diamond">
+
+    </div>
+</body>
+</html>
