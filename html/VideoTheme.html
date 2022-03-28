@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <title>backgorund video </title>
+
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      color: aliceblue;
+      font-size: larger;
+      height: 3rem;
+      background-color: #3A3845;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+      position: sticky;
+    }
+
+    ul {
+      width: 100vh;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline;
+    }
+    nav a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    .logo {
+      /* font-size: x-large;
+      font-style: italic; */
+   
+      width: 3rem;
+      height: 3rem;  
+      background-image: url("/assets/images/logo-04.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      fill: #000;
+    }
+
+    .hero {
+        width: 100%;
+      height: 100vh;
+      position: relative;
+
+      background-color: rebeccapurple;
+    
+
+      
+    }
+
+    .heroText{
+        position: absolute;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        top: 50%;
+        left: 50%;
+        font-size: 48px;
+        transform: translate(-50%,-50%);
+    }
+
+    
+
+    
+
+   
+  </style>
+
+  <body>
+    <nav>
+      <div class="logo">
+        
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Moon</a></li>
+        <li><a href="#">Satellite</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+
+        <video src="../assets/video/moon.mp4" autoplay muted loop width="100%">
+           
+        </video>
+
+        <div class="heroText">
+            
+
+
+            <div id="typed-strings">
+                <p>Travel <strong>to The</strong> Moon !</p>
+                  
+                
+              </div>
+              <span id="typed"></span>
+        </div>
+
+      
+
+        
+   
+    </div>
+
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElement: '#typed-strings',
+          startDelay: 10,
+          typeSpeed: 50,
+
+        });
+      </script>
+  </body>
+</html>

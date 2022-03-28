@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gif</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      color: aliceblue;
+      font-size: larger;
+      height: 3rem;
+      background-color: darkslategrey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+      position: sticky;
+    }
+
+    ul {
+      width: 50vh;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline;
+    }
+    nav a {
+      text-decoration: none;
+      color: aliceblue;
+    }
+
+    .logo {
+      font-size: x-large;
+      font-style: italic;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: lightblue;
+    }
+
+    
+
+    
+
+    .heroText ::first-letter{
+      font-size: larger;
+    }
+
+    
+
+    .heroImage {
+      width: 100vh;
+      height: 50vh;
+      background-image: url('/assets/images/Abstract_animated_illustrations_by_Icons8/Abstract_easy_money_transparent_by_Icons8.gif');
+    }
+
+    .heroBtn{
+        width: 10vh;
+        height: 2rem;
+        background-color: deepskyblue;
+        color: whitesmoke;
+
+    }
+  </style>
+
+  <body>
+    <nav>
+      <div class="logo">
+        Logo
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>About me</li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="heroText">
+        Welcome to My Hero Section
+        
+        <div class="heroBtn">
+            Get it
+        </div>
+        
+      </div>
+
+      <div class="heroImage"></div>
+    </div>
+  </body>
+</html>

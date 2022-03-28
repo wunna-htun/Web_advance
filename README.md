@@ -20,6 +20,15 @@
 
 `https://www.coingecko.com/en/api`
 
+
+## Learn
+
 * promise
 * async await
 * fetch
+
+
+Libiary 
+
+Type Text
+https://github.com/mattboldt/typed.js/
